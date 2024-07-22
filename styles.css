@@ -1,0 +1,579 @@
+:root {
+        
+      --primary-color: #165079; 
+      --secondary-color: #0D3551; 
+      --third-color: #344754;
+      --background-color-white: #FCFCFC;
+      --background-color-grey: #D0D7DD;
+  }
+
+  body {
+    font-family: 'Clash Display', sans-serif;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fbfbfb;
+    overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  background: #fbfbfb;
+  border-top: 1px solid #d0d7dd;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1440px; 
+  height: 60px;
+  background: #165079;
+  gap: 32px;
+  padding: 0 80px;
+}
+
+.menu-item {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.newest {
+  font-family: "Inter", sans-serif;
+  background: #2180c2;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 150px;
+  height: 30px; 
+  padding: 4px 10px; 
+  border: 1px solid #98A8B3;;
+  border-radius: 8px;
+  position: relative;
+  transform: translateX(200px);
+}
+
+.text-input {
+  flex: 1;
+  font-family: "Inter", sans-serif;
+  color: #98A8B3;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; 
+  border: none; 
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  right: 10px; 
+  cursor: pointer; 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background: url('./resources/lupa.png') no-repeat center;
+  background-size: 100% 100%;
+}
+
+
+.photo-container {
+  width: 100%;
+  max-width: 1392px;
+  margin-top: 16px;
+  height: 600px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.photo-container::before {
+  content: "";
+  display: block;
+  padding-top: 43%; 
+  background: url('./resources/main-photo.png') no-repeat center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.blue-overlay {
+position: absolute;
+top: 49%;
+left: 0;
+right: 1;
+transform: translateY(-50%);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+box-sizing: border-box;
+}
+
+.blue-overlay .content {
+margin-left: 64px;
+background: #0d3451;
+width: 500px;
+height: 334px;
+padding: 24px;
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+box-sizing: border-box;
+}
+
+.pagrindinis-tekstas {
+display: block;
+color: #fbfbfb;
+font-size: 30px;
+font-family: 'Clash Display', sans-serif;
+font-weight: 500;
+line-height: 0.1;
+text-align: left;
+letter-spacing: 0.6px;
+margin: 0;
+margin-left: 20px;
+margin-top: 40px;
+}
+
+.pagrindinis-tekstas-2{
+  display: block;
+  color: #fbfbfb;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 0.6px;
+  margin: 0; 
+  margin-left: 20px;
+  margin-bottom: 24px;
+  }
+
+  .heading {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 20px;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  .heading-2 {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 0;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+   .heading, .heading-2 {
+    transform: translateX(20px);
+  }
+
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 231px;
+  height: 44px;
+  background: #ca348b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.calculate-value {
+  font-family: "Inter", sans-serif;  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+
+.clients-looking {
+  position: relative;
+  padding-right: 80px;
+  margin-top: 120px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 24px auto;
+  padding: 0 16px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  position: relative;
+  margin-top: 120px;
+  font-family: 'Clash Display', sans-serif;
+  letter-spacing: 1.08px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 24px;
+  margin-left: 70px;
+}
+
+.swiper-container {
+  margin-top: 48px;
+  width: calc(100% - 160px);
+  padding-left: 70px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  position: relative; 
+  background: #ffffff;
+  border: 1px solid #d0d7dd;
+  border-radius: 8px;
+  padding: 10px;
+  padding-bottom: 15px;
+  width: 380px;
+  max-width: 380px;
+  height: 301px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heart-icon {
+  fill: #98A8B3;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heart-icon svg {
+  fill: #98A8B3;
+  width: 23px;
+  height: 20px;
+  transition: fill 0.3s ease;
+}
+
+.heart-icon.clicked svg path {
+  fill: #FF0000;
+}
+
+.card-id,
+.card-title,
+.card-info,
+.card-description {
+  font-family: "Inter", sans-serif;
+  margin: 8px 0;
+}
+
+.card-id {
+  color: #344754;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.card-title {
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-info {
+  color: #344754;
+  padding-top: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-description {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+.card-link {
+  padding-top: 12px;
+  display: inline-block;
+  margin-top: 3px;
+  color: #165078;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*javascriptas*/
+.swiper-pagination {
+  position: absolute; 
+  display: flex;
+  gap: 3px; 
+  margin: 0 10px; 
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  transform: translate(-10px);
+  height: 20px;
+  background: url('resources/taskiukas.svg') no-repeat center center;
+  background-size: contain;
+  border-radius: 40%;
+  display: inline-block;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: url('resources/taskiukas.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.swiper-controls {
+  margin: 20px;
+  gap: 80px;
+  position: absolute;
+  top: 90px;
+  right: 120px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.slide-button {
+  background-color: #ffffff;
+  border: 1px solid #d0d7dd;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#slide-prev {
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  background-image: url('resources/rodykle-atgal.svg');
+}
+
+#slide-next {
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  background-image: url('resources/rodykle-pirmyn.svg');
+}
+
+
+.separator { /*bruksniukas cia*/
+  color: #D0D7DD; 
+}
+
+.footer-container {
+  margin-left: 80px;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px;
+  width: 1440px;
+  padding: 1em;
+}
+
+.row.primary {
+  align-items: center;
+}
+
+.about {
+  width: 770px;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footer-text-bigger {
+  letter-spacing: 0.7px;
+  font-size: 30px;
+  color: #101E28;
+  line-height: 8px;
+}
+
+.footer-text-smaller {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #101E28;
+}
+
+.subscribe {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  transform: translateX(-80px);
+}
+
+.subscribe > div {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribe input[type="email"] {
+  font-family: "Inter", sans-serif;
+  color: #667885;
+  padding: 10px;
+  width: 300px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  width: 170px;
+  height: 44px;
+  font-weight: 600;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  border-color: #666666;
+}
+
+.subscribe-button:hover {/*cia savo dadejau, delete jei netinka, subscribe mygtukas pakeicia spalva*/  
+  background-color: var(--background-color-grey)
+}
+
+.contact-info {
+  margin-bottom: 52px;
+  width: 199px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.contact-text {
+  font-family: 'Clash Display', sans-serif;
+  letter-spacing: 0.48px;
+  font-weight: 600;
+  color: #165079;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* footerio linku styling */
+ul li a {
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #165079
+}
+
+.link {
+  flex-shrink: 0;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-left: 80px; 
+}
+
+.contact-text {
+  color: #0d3451;
+  font-size: 1.4em;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #667885
+}

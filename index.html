@@ -1,388 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="nav-bar">
-        <div class="row">
-          <div class="left">
-            <div class="menu-item">
-              <span class="services">Skelbimai</span
-              ><button class="nt-label"><span class="newest">301</span></button>
-            </div>
-            <div class="menu-item-1">
-              <span class="services-2">Išsaugoti skelbimai</span
-              ><button class="nt-label-3">
-                <span class="newest-4">2</span>
-              </button>
-            </div>
-            <div class="menu-item-5">
-              <span class="services-6">Išsaugotos paieškos</span>
-              <div class="nt-label-7"><span class="newest-8">3</span></div>
-            </div>
-            <div class="menu-item-9">
-              <span class="services-a">Siūlyti objektus</span>
-            </div>
-            <div class="menu-item-b">
-              <span class="services-c">NT vertės skaičiuoklė</span>
-            </div>
-          </div>
-          <button class="input">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomo uzduotis - NT website</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+      
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-navigation">
+          <a href="#" class="menu-item">Skelbimai <span class="newest">301</span></a>
+          <a href="#" class="menu-item">Išsaugoti skelbimai <span class="newest">2</span></a>
+          <a href="#" class="menu-item">Išsaugotos paieškos <span class="newest">3</span></a>
+          <a href="#" class="menu-item">Siūlyti objektus</a>
+          <a href="#" class="menu-item">NT vertės skaičiuoklė</a>
+          <div class="input-container">
+            <input type="text" class="text-input" placeholder="Ieškoti pagal ID" />
+            <button class="icon-button">
+                <div class="icon"></div>
+            </button>
+        </div>
+        </nav>
+      </header>
+      <div class="photo-container">
+        <div class="blue-overlay">
             <div class="content">
-              <span class="text">Ieškoti pagal ID</span>
+                <h1 class="pagrindinis-tekstas">Smalsu, kokia jūsų</h1> 
+                <h1 class="pagrindinis-tekstas-2">nekilnojamo turto vertė?</h1>
+                <p class="heading">Pasinaudokite mūsų turto vertės skaičiuokle ir</p>
+                <p class="heading-2">gaukite preliminarų įvertinimą.</p>
+                <button class="button">
+                    <span class="calculate-value">Apskaičiuoti NT vertę</span>
+                </button>
             </div>
-            <div class="search"><div class="icon"></div></div>
-          </button>
         </div>
+    </div>
+
+    <section class="clients-looking">
+      <h2 class="section-title">Klientai ieško</h2>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <p class="card-id">ID: 34565</p>
+              <p class="card-title">Žemės ūkio sklypas nuomai</p>
+              <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+              <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+              <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+              <a href="#" class="card-link">Rodyti daugiau</a>
+              <span class="heart-icon" id="heart-icon-1">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42
+                   3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81
+                  14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0
+                  3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/> <!-- nu cia jau AI panaudojau (paspaudus keicia spalva) :D-->
+                </svg>
+              </span>
+          </div>
+
+          <div class="swiper-slide card">
+            <p class="card-id">ID: 34565</p>
+            <p class="card-title">Patalpos nuomai, gamybai</p>
+            <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+            <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+            <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+            <a href="#" class="card-link">Rodyti daugiau</a>
+            <span class="heart-icon" id="heart-icon-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42
+                 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81
+                14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0
+                3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/> <!-- nu cia jau AI panaudojau (paspaudus keicia spalva) :D-->
+              </svg>
+        </div>
+
+              <div class="swiper-slide card">
+              <p class="card-id">ID: 34565</p>
+              <p class="card-title">Patalpos nuomai, gamybai</p>
+              <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+              <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+              <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+              <a href="#" class="card-link">Rodyti daugiau</a>
+              <span class="heart-icon" id="heart-icon-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42
+                   3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81
+                  14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0
+                  3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/> <!-- nu cia jau AI panaudojau (paspaudus keicia spalva) :D-->
+                </svg>
+          </div>
+          
+          <div class="swiper-slide card">
+            <p class="card-id">ID: 34565</p>
+            <p class="card-title">Žemės ūkio sklypas nuomai</p>
+            <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+            <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+            <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+            <a href="#" class="card-link">Rodyti daugiau</a>
+            <span class="heart-icon" id="heart-icon-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42
+                 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81
+                14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0
+                3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/> <!-- nu cia jau AI panaudojau (paspaudus keicia spalva) :D-->
+              </svg>
+        </div>
+
+        <div class="swiper-slide card">
+          <p class="card-id">ID: 34565</p>
+          <p class="card-title">Patalpos nuomai, gamybai</p>
+          <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+          <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+          <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+          <a href="#" class="card-link">Rodyti daugiau</a>
+          <span class="heart-icon" id="heart-icon-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/></svg>
+          </span>
       </div>
-      <div class="nt-value-container">
-        <div class="row-d">
-          <div class="content-e">
-            <span class="curious-value"
-              >Smalsu, kokia jūsų nekilnojamo turto vertė?</span
-            ><span class="heading"
-              >Pasinaudokite mūsų turto vertės skaičiuokle ir gaukite
-              preliminarų įvertinimą.</span
-            ><button class="button">
-              <div class="button-base">
-                <span class="calculate-value">Apskaičiuoti NT vertę</span>
-              </div>
-            </button>
-          </div>
-        </div>
+
+      <div class="swiper-slide card">
+        <p class="card-id">ID: 34565</p>
+        <p class="card-title">Patalpos nuomai, gamybai</p>
+        <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+        <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+        <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+        <a href="#" class="card-link">Rodyti daugiau</a>
+        <span class="heart-icon" id="heart-icon-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/></svg>
+        </span>
       </div>
-      <div class="clients-search">
-        <div class="row-f">
-          <span class="clients-search-10">Klientai ieško</span>
-          <div class="mini-navigation">
-            <div class="button-11">
-              <div class="chevron-right"><div class="icon-12"></div></div>
-            </div>
-            <div class="row-13">
-              <div class="ellipse"></div>
-              <div class="ellipse-14"></div>
-              <div class="ellipse-15"></div>
-            </div>
-            <div class="button-16">
-              <div class="chevron-right-17"><div class="icon-18"></div></div>
-            </div>
+
+      <div class="swiper-slide card">
+        <p class="card-id">ID: 34565</p>
+        <p class="card-title">Patalpos nuomai, gamybai</p>
+        <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+        <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+        <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+        <a href="#" class="card-link">Rodyti daugiau</a>
+          <span class="heart-icon" id="heart-icon-7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/></svg>
+          </span>
+    </div>
+
+    <div class="swiper-slide card">
+      <p class="card-id">ID: 34565</p>
+      <p class="card-title">Patalpos nuomai, gamybai</p>
+      <p class="card-info">Šiauliai <span class="separator">|</span> Paskirtis: Gamybos <span class="separator">|</span></p>
+      <p class="card-info">Plotas nuo: 900 iki 1500 m² kamb.</p>
+      <p class="card-description">Padedame išnuomoti žemės ūkio paskirties sklypus, atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip pat konsultuojame, k...</p>
+      <a href="#" class="card-link">Rodyti daugiau</a>
+      <span class="heart-icon" id="heart-icon-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#98A8B3"/></svg>
+      </span>
+    </div>
           </div>
+          <div class="swiper-controls">
+            <button id="slide-prev" class="slide-button"></button>
+            <div class="swiper-pagination"></div>
+            <button id="slide-next" class="slide-button"></button>
         </div>
-        <div class="row-19">
-          <div class="klientai-iesko-card">
-            <div class="info-col">
-              <div class="col">
-                <div class="row-1a">
-                  <span class="id">ID: 34565</span>
-                  <div class="ic-heart"><div class="vector"></div></div>
-                </div>
-                <span class="text-f">Žemės ūkio sklypas nuomai</span>
-                <div class="detail-row">
-                  <span class="text-10">Šiauliai</span>
-                  <div class="box-b">
-                    <span class="plotas-nuo-iki">Plotas nuo: 900 iki 1500 </span
-                    ><span class="text-12">m²</span
-                    ><span class="kamb"> kamb.</span>
-                  </div>
-                  <div class="separator"></div>
-                  <span class="paskirtis-gamybos">Paskirtis: Gamybos</span>
-                  <div class="separator-1b"></div>
-                </div>
-              </div>
-              <div class="col-1c">
-                <span class="text-15"
-                  >Padedame išnuomoti žemės ūkio paskirties sklypus,
-                  atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip
-                  pat konsultuojame, kokias nuomos sutartis pasirašyti su
-                  ūkininkais, tiksliau kokias nepasirašyti, kad vėliau prireikus
-                  reikalui nebūtų didelių kliūčių jas nutraukti, t.y. kad
-                  ateityje netektų gailėtis, kas dažnai pasitaiko tarp klientų,
-                  kurie nuskriausti tokių sutarčių kreipiasi į mus.</span
-                >
-                <div class="button-1d">
-                  <div class="_button-base">
-                    <span class="text-1e">Rodyti daugiau</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="klientai-iesko-card-1f">
-            <div class="info-col-20">
-              <div class="col-21">
-                <div class="row-22">
-                  <span class="id-23">ID: 34565</span>
-                  <div class="ic-heart-24"><div class="vector-25"></div></div>
-                </div>
-                <span class="text-18">Patalpos nuomai, gamybai</span>
-                <div class="detail-row-26">
-                  <span class="text-19">Šiauliai</span>
-                  <div class="box-e">
-                    <span class="plotas-nuo-iki-27"
-                      >Plotas nuo: 900 iki 1500 </span
-                    ><span class="text-1b">m²</span
-                    ><span class="kamb-28"> kamb.</span>
-                  </div>
-                  <div class="separator-29"></div>
-                  <span class="paskirtis-gamybos-2a">Paskirtis: Gamybos</span>
-                  <div class="separator-2b"></div>
-                </div>
-              </div>
-              <div class="col-2c">
-                <span class="text-1e"
-                  >Padedame išnuomoti žemės ūkio paskirties sklypus,
-                  atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip
-                  pat konsultuojame, kokias nuomos sutartis pasirašyti su
-                  ūkininkais, tiksliau kokias nepasirašyti, kad vėliau prireikus
-                  reikalui nebūtų didelių kliūčių jas nutraukti, t.y. kad
-                  ateityje netektų gailėtis, kas dažnai pasitaiko tarp klientų,
-                  kurie nuskriausti tokių sutarčių kreipiasi į mus.</span
-                >
-                <div class="button-2d">
-                  <div class="_button-base-2e">
-                    <span class="text-2f">Rodyti daugiau</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="client-search-card">
-            <div class="info-col-30">
-              <div class="col-31">
-                <div class="row-32">
-                  <span class="id-span">ID: 34565</span>
-                  <div class="heart-icon"><div class="vector-33"></div></div>
-                </div>
-                <span class="property-title">Žemės ūkio sklypas nuomai</span>
-                <div class="detail-row-34">
-                  <span class="location-span">Šiauliai</span>
-                  <div class="area-span">
-                    <span class="area-span-35">Plotas nuo: 900 iki 1500 </span
-                    ><span class="area-unit-span">m²</span
-                    ><span class="room-span"> kamb.</span>
-                  </div>
-                  <div class="separator-36"></div>
-                  <span class="purpose-span">Paskirtis: Gamybos</span>
-                  <div class="separator-37"></div>
-                </div>
-              </div>
-              <div class="col-38">
-                <span class="description-span"
-                  >Padedame išnuomoti žemės ūkio paskirties sklypus,
-                  atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip
-                  pat konsultuojame, kokias nuomos sutartis pasirašyti su
-                  ūkininkais, tiksliau kokias nepasirašyti, kad vėliau prireikus
-                  reikalui nebūtų didelių kliūčių jas nutraukti, t.y. kad
-                  ateityje netektų gailėtis, kas dažnai pasitaiko tarp klientų,
-                  kurie nuskriausti tokių sutarčių kreipiasi į mus.</span
-                >
-                <div class="button-39">
-                  <div class="button-base-3a">
-                    <span class="text-span">Rodyti daugiau</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="client-search-card-3b">
-            <div class="info-col-3c">
-              <div class="col-3d">
-                <div class="row-3e">
-                  <span class="id-span-3f">ID: 34565</span>
-                  <div class="heart-icon-40"><div class="vector-41"></div></div>
-                </div>
-                <span class="property-title-42">Žemės ūkio sklypas nuomai</span>
-                <div class="detail-row-43">
-                  <span class="location-span-44">Šiauliai</span>
-                  <div class="area-span-45">
-                    <span class="area-span-46">Plotas nuo: 900 iki 1500 </span
-                    ><span class="area-unit-span-47">m²</span
-                    ><span class="room-span-48"> kamb.</span>
-                  </div>
-                  <div class="separator-49"></div>
-                  <span class="purpose-span-4a">Paskirtis: Gamybos</span>
-                  <div class="separator-4b"></div>
-                </div>
-              </div>
-              <div class="col-4c">
-                <span class="description-span-4d"
-                  >Padedame išnuomoti žemės ūkio paskirties sklypus,
-                  atsižvelgdami tik į Jūsų poreikius, o ne vien į ūkininkų. Taip
-                  pat konsultuojame, kokias nuomos sutartis pasirašyti su
-                  ūkininkais, tiksliau kokias nepasirašyti, kad vėliau prireikus
-                  reikalui nebūtų didelių kliūčių jas nutraukti, t.y. kad
-                  ateityje netektų gailėtis, kas dažnai pasitaiko tarp klientų,
-                  kurie nuskriausti tokių sutarčių kreipiasi į mus.</span
-                >
-                <div class="button-4e">
-                  <div class="button-base-4f">
-                    <span class="text-span-50">Rodyti daugiau</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="content-51">
-          <div class="text-supporting-text">
-            <span class="text-52">Prenumeruokite mūsų naujienlaiškį</span
-            ><span class="supporting-text"
-              >Gaukite naujausius NT pasiūlymus savo el. paštu kasdien!</span
-            >
-          </div>
-          <div class="email-capture">
-            <div class="input-field-base">
-              <div class="input-with-label">
-                <div class="input-53">
-                  <div class="content-54">
-                    <span class="text-55">El. paštas</span>
-                  </div>
-                </div>
-              </div>
-              <input class="input-56" />
-            </div>
-            <button class="button-57">
-              <div class="button-base-58">
-                <span class="text-59">Prenumeruoti</span>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content-5a">
-            <div class="footer-links">
-              <span class="text-5b">info@puslapis.lt</span
-              ><span class="text-5c">+370 646 12345</span
-              ><span class="text-5d">Pilnaties al. 45, 74400, Kelmė</span>
-            </div>
-            <div class="row-5e">
-              <div class="footer-links-column">
-                <span class="heading-5f">NT skelbimai</span>
-                <div class="footer-links-60">
-                  <div class="button-61">
-                    <div class="button-base-62">
-                      <span class="text-63">Visi skelbimai</span>
-                    </div>
-                  </div>
-                  <div class="button-64">
-                    <div class="button-base-65">
-                      <span class="text-66">Butai pardavimui</span>
-                    </div>
-                  </div>
-                  <div class="button-67">
-                    <div class="button-base-68">
-                      <span class="text-69">Namai pardavimui</span>
-                    </div>
-                  </div>
-                  <div class="button-6a">
-                    <div class="button-base-6b">
-                      <span class="text-6c">Butai nuomai</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-links-column-6d">
-                <span class="heading-6e">Mūsų įrankiai</span>
-                <div class="footer-links-6f">
-                  <div class="button-70">
-                    <div class="button-base-71">
-                      <span class="text-72">Siūlyti objektus</span>
-                    </div>
-                  </div>
-                  <div class="button-73">
-                    <div class="button-base-74">
-                      <span class="text-75">NT vertės skaičiuoklė</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-links-column-76">
-                <span class="heading-77">Paslaugos</span>
-                <div class="footer-links-78">
-                  <div class="button-79">
-                    <div class="button-base-7a">
-                      <span class="text-7b">Tarpininkavimas</span>
-                    </div>
-                  </div>
-                  <div class="button-7c">
-                    <div class="button-base-7d">
-                      <span class="text-7e">NT nuomos administravimas</span>
-                    </div>
-                  </div>
-                  <div class="button-7f">
-                    <div class="button-base-80">
-                      <span class="text-81">NT paieška</span>
-                    </div>
-                  </div>
-                  <div class="button-82">
-                    <div class="button-base-83">
-                      <span class="text-84">Konsultacijos</span>
-                    </div>
-                  </div>
-                  <div class="button-85">
-                    <div class="button-base-86">
-                      <span class="text-87">Partnerių paslaugos</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-links-column-88">
-                <span class="heading-89">Teisinė informacija</span>
-                <div class="footer-links-8a">
-                  <div class="button-8b">
-                    <div class="button-base-8c">
-                      <span class="text-8d">Teisinė informacija</span>
-                    </div>
-                  </div>
-                  <div class="button-8e">
-                    <div class="button-base-8f">
-                      <span class="text-90">Privatumo politika</span>
-                    </div>
-                  </div>
-                  <div class="button-91">
-                    <div class="button-base-92">
-                      <span class="text-93">Slapukai</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-links-column-94">
-                <span class="heading-95">Įmonė</span>
-                <div class="footer-links-96">
-                  <div class="button-97">
-                    <div class="button-base-98">
-                      <span class="text-99">Apie mus</span>
-                    </div>
-                  </div>
-                  <div class="button-9a">
-                    <div class="button-base-9b">
-                      <span class="text-9c">Karjera</span>
-                    </div>
-                  </div>
-                  <div class="button-9d">
-                    <div class="button-base-9e">
-                      <span class="text-9f">Naujienos</span>
-                    </div>
-                  </div>
-                  <div class="button-a0">
-                    <div class="button-base-a1">
-                      <span class="text-a2">Kontaktai</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+  </section>
+
+  
+  <div class="footer-divider"></div>
+  <div class="footer-container">
+    <footer>
+  <div class="row primary">
+    <div class="column about">
+      <p class="footer-text-bigger">Prenumeruokite mūsų naujienlaiškį</p>
+      <p class="footer-text-smaller">Gaukite naujausius NT pasiūlymus savo el. paštu kasdien!</p>
+    </div>
+
+    <div class="subscribe">
+      <div>
+        <input type="email" placeholder="El.paštas" />
+        <button class="subscribe-button">Prenumeruoti</button>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+
+    <!-- Kontaktu eilute -->
+    <div class="row">
+      <div class="contact-info">
+        <p class="contact-text">info@puslapis.lt</p>
+        <p class="contact-text">+370 646 12345</p>
+        <p class="contact-text">Pilnaties al.45,
+           74400, Kelmė</p>
+      </div>
+
+
+<div class="link-container">
+  <!-- NT skelbimai -->
+    <div class="link">
+      <h3>NT skelbimai</h3>
+      <ul>
+        <li><a href="#home">Visi skelbimai</a></li>
+        <li><a href="#team">Butai pardavimui</a></li>
+        <li><a href="#blogs">Namai pardavimui</a></li>
+        <li><a href="#support">Butai nuomai</a></li>
+      </ul>
+    </div>
+  
+    <!-- Mūsų įrankiai -->
+    <div class="link">
+      <h3>Mūsų įrankiai</h3>
+      <ul>
+        <li><a href="#home">Siūlyti objektus</a></li>
+        <li><a href="#team">NT vertės<br>skaičiuoklė</a></li>
+      </ul>
+    </div>
+  
+    <!-- Paslaugos -->
+    <div class="link">
+      <h3>Paslaugos</h3>
+      <ul>
+        <li><a href="#home">Tarpininkavimas</a></li>
+        <li><a href="#team">NT nuomos<br>administravimas</a></li>
+        <li><a href="#blogs">NT paieška</a></li>
+        <li><a href="#support">Konsultacijos</a></li>
+        <li><a href="#support">Partnerių paslaugos</a></li>
+      </ul>
+    </div>
+  
+    <!-- Teisinė informacija -->
+    <div class="link">
+      <h3>Teisinė informacija</h3>
+      <ul>
+        <li><a href="#home">Teisinė informacija</a></li>
+        <li><a href="#team">Privatumo politika</a></li>
+        <li><a href="#blogs">Slapukai</a></li>
+      </ul>
+    </div>
+  
+    <!-- Įmonė -->
+    <div class="link">
+      <h3>Įmonė</h3>
+      <ul>
+        <li><a href="#home">Apie mus</a></li>
+        <li><a href="#team">Karjera</a></li>
+        <li><a href="#blogs">Naujienos</a></li>
+        <li><a href="#support">Kontaktai</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html> 
